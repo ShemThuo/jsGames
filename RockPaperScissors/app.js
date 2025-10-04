@@ -1,8 +1,9 @@
-const computerChoice = document.getElementById('computer-choice')
+const computerChoiceDisplay = document.getElementById('computer-choice')
 const userChoiceDisplay = document.getElementById('user-choice')
 const resultDisplay = document.getElementById('result')
 const possibleChoices = document.querySelectorAll('button')
 let userChoice
+let computerChoice
 
 possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click', (e) => {
     userChoice = e.target.id
@@ -11,5 +12,13 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
 }))
 
 function generateComputerChoice() {
-    const randomNumber = Math.random() * 3 //Or I can use possibleChoices.length
+    const randomNumber = Math.floor(Math.random() * 3) + 1 //Or I can use possibleChoices.length
+    console.log(randomNumber)
+
+    if (randomNumber === 1) {
+        computerChoice = 'rock'
+    }else if (randomNumber === 2) {
+        computerChoice = 'scissors'
+    }else computerChoice = 'paper' 
+    computerChoiceDisplay.innerHTML = computerChoice
 }
