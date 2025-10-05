@@ -1,52 +1,52 @@
 const cardArray = [
     {
         name: 'fries', 
-        img: 'images/fries.png'
+        img: 'images/fries.jpg'
     },
     {
         name: 'cheeseburger', 
-        img: 'images/cheeseburger.png'
+        img: 'images/cheeseburger.jpg'
     },
     {
         name: 'hotdog', 
-        img: 'images/hotdog.png'
+        img: 'images/hotdog.jpg'
     },
     {
         name: 'ice-cream', 
-        img: 'images/ice-cream.png'
+        img: 'images/ice-cream.jpg'
     },
     {
         name: 'milkshake', 
-        img: 'images/milkshake.png'
+        img: 'images/milkshake.jpg'
     },
     {
         name: 'pizza', 
-        img: 'images/pizza.png'
+        img: 'images/pizza.jpg'
     },
 
     {
         name: 'fries', 
-        img: 'images/fries.png'
+        img: 'images/fries.jpg'
     },
     {
         name: 'cheeseburger', 
-        img: 'images/cheeseburger.png'
+        img: 'images/cheeseburger.jpg'
     },
     {
         name: 'hotdog', 
-        img: 'images/hotdog.png'
+        img: 'images/hotdog.jpg'
     },
     {
         name: 'ice-cream', 
-        img: 'images/ice-cream.png'
+        img: 'images/ice-cream.jpg'
     },
     {
         name: 'milkshake', 
-        img: 'images/milkshake.png'
+        img: 'images/milkshake.jpg'
     },
     {
         name: 'pizza', 
-        img: 'images/pizza.png'
+        img: 'images/pizza.jpg'
     },
 ]
 
@@ -57,7 +57,7 @@ const gridDisplay = document.querySelector('#grid')
 function createBoard() {
     for (let i = 0; i<codeArray.length; i++) {
         const card = document.createElement('img')
-        card.setAttribute('src', 'images/blank.png')
+        card.setAttribute('src', 'images/blank.jpg')
         card.setAttribute('data-id', i)
         card.addEventListener('click', flipCard)
         gridDisplay.appendChild(card) 
