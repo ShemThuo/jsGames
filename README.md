@@ -12,7 +12,7 @@
 ## 🧩 About  
 **jsGames** is a growing collection of simple, browser-based games built using **HTML, CSS, and Vanilla JavaScript**.  
 Each game is lightweight, interactive, and designed to help beginners understand core programming and game logic concepts.
-“Games are the language children intuitively understand — and code is the medium that lets us play in that language.”
+*“Games are the language children intuitively understand — and **code** is the medium that lets us play in that language.”*
 
 ---
 
