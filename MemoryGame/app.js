@@ -55,10 +55,19 @@ cardArray.sort(() => 0.5 - Math.random())
 const gridDisplay = document.querySelector('#grid')
 
 function createBoard() {
-    for (let i = 0; i<10; i++) {
+    for (let i = 0; i<codeArray.length; i++) {
         const card = document.createElement('img')
         card.setAttribute('src', 'images/blank.png')
-        console.log(card, i)
+        card.setAttribute('data-id', i)
+        card.addEventListener('click', flipCard)
+        gridDisplay.appendChild(card) 
     }
 }
 createBoard()
+
+function flipCard() {
+    const cardID = this.getAttribute('data-id')
+    console.log(cardArray[cardID])
+    console.log('clicked', cardID)
+}
+//45:43
