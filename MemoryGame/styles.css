@@ -1,3 +1,7 @@
+body {
+    background: rgba(141, 126, 126, 0.75);
+    justify-content: center;
+}
 #grid {
     width: 400px;
     height: 300px;

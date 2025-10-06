@@ -67,7 +67,7 @@ createBoard()
 
 function flipCard() {
     const cardID = this.getAttribute('data-id')
-    console.log(cardArray[cardID])
+    console.log(cardArray[cardID].name)
     console.log('clicked', cardID)
 }
 //45:43
