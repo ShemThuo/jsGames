@@ -1,10 +1,4 @@
-body {
-    background: rgba(141, 126, 126, 0.75);
-    justify-content: center;
-}
-.grid items {
-    width: 400px;
-    height: 300px;
-    display: column;
+#grid {
+    display: flex;
     flex-wrap: wrap;
 }
