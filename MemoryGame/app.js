@@ -4,8 +4,8 @@ const cardArray = [
         img: 'images/fries.jpg'
     },
     {
-        name: 'cheeseburger', 
-        img: 'images/cheeseburger.jpg'
+        name: 'mutura', 
+        img: 'images/mutura.jpg'
     },
     {
         name: 'hotdog', 
@@ -29,8 +29,8 @@ const cardArray = [
         img: 'images/fries.jpg'
     },
     {
-        name: 'cheeseburger', 
-        img: 'images/cheeseburger.jpg'
+        name: 'mutura', 
+        img: 'images/mutura.jpg'
     },
     {
         name: 'hotdog', 
@@ -55,7 +55,7 @@ cardArray.sort(() => 0.5 - Math.random())
 const gridDisplay = document.querySelector('#grid')
 
 function createBoard() {
-    for (let i = 0; i<codeArray.length; i++) {
+    for (let i = 0; i<cardArray.length; i++) {
         const card = document.createElement('img')
         card.setAttribute('src', 'images/blank.jpg')
         card.setAttribute('data-id', i)
@@ -71,7 +71,3 @@ function flipCard() {
     console.log('clicked', cardID)
 }
 
-function checkCard() {
-    console.log('check for match')
-}
-//45:43

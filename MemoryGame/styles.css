@@ -2,9 +2,9 @@ body {
     background: rgba(141, 126, 126, 0.75);
     justify-content: center;
 }
-#grid {
+.grid items {
     width: 400px;
     height: 300px;
-    display: flex;
+    display: column;
     flex-wrap: wrap;
 }
