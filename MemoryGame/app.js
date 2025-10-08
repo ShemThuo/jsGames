@@ -70,4 +70,8 @@ function flipCard() {
     console.log(cardArray[cardID].name)
     console.log('clicked', cardID)
 }
+
+function checkCard() {
+    console.log('check for match')
+}
 //45:43
