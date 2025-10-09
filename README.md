@@ -37,3 +37,50 @@ Each game is lightweight, interactive, and designed to help beginners understand
 1. **Clone the repository**
    ```bash
    git clone https://github.com/ShemThuo/jsGames.git
+   ```
+
+2. **Open a game**
+   - Navigate to a game folder (e.g., `MemoryGame/` or `RockPaperScissors/`).
+   - Open `index.html` in your web browser.
+
+3. **Play and enjoy!**
+
+---
+
+## 📸 Screenshots
+
+### Memory Game
+![Memory Game Screenshot](MemoryGame/images/bg.jpg)
+
+### Rock Paper Scissors
+<!-- Add a screenshot here if available -->
+
+---
+
+## ✨ Contributing
+
+Contributions are welcome! If you have ideas for new games, improvements, or bug fixes:
+- Fork this repo
+- Create a new branch
+- Make your changes
+- Open a pull request
+
+---
+
+## 📚 Learning Resources
+- [MDN Web Docs: JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [MDN Web Docs: HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [MDN Web Docs: CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [JavaScript.info](https://javascript.info/)
+
+---
+
+## 📝 License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+---
+
+## 🙌 Acknowledgements
+- Inspired by classic games and online tutorials
+- Created by ShemThuo
