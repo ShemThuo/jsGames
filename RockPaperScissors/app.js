@@ -22,10 +22,10 @@ function generateComputerChoice() {
     console.log(randomNumber)
 
     if (randomNumber === 1) {
-        computerChoice = 'rock'
+        computerChoice = 'Rock'
     }else if (randomNumber === 2) {
-        computerChoice = 'scissors'
-    }else computerChoice = 'paper' 
+        computerChoice = 'Scissors'
+    }else computerChoice = 'Paper' 
     computerChoiceDisplay.innerHTML = computerChoice
 }
 
@@ -33,22 +33,22 @@ function getResult() {
     if (computerChoice === userChoice) {
         result = 'Its a Draw'
     }
-    if (computerChoice === 'rock' && userChoice === 'paper') {
+    if (computerChoice === 'Rock' && userChoice === 'Paper') {
         result = 'You Won!!'
     }
-    if (computerChoice === 'rock' && userChoice === 'scissors') {
+    if (computerChoice === 'Rock' && userChoice === 'Scissors') {
         result = 'You Lost!!'
     }
-    if (computerChoice === 'paper' && userChoice === 'scissors') {
+    if (computerChoice === 'Paper' && userChoice === 'Scissors') {
         result = 'You Won!!'
     }
-    if (computerChoice === 'paper' && userChoice === 'rock') {
+    if (computerChoice === 'Paper' && userChoice === 'Rock') {
         result = 'You Lost!!'
     }
-    if (computerChoice === 'scissors' && userChoice === 'rock') {
+    if (computerChoice === 'Scissors' && userChoice === 'Rock') {
         result = 'You Won!!'
     }
-    if (computerChoice === 'scissors' && userChoice === 'paper') {
+    if (computerChoice === 'Scissors' && userChoice === 'Paper') {
         result = 'You Lost!!'
     }
     resultDisplay.innerHTML = result
