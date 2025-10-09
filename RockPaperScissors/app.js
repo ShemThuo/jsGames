@@ -1,7 +1,10 @@
+
 const computerChoiceDisplay = document.getElementById('computer-choice')
 const userChoiceDisplay = document.getElementById('user-choice')
 const resultDisplay = document.getElementById('result')
-const possibleChoices = document.querySelectorAll('button')
+const playAgainBtn = document.getElementById('play-again');
+const choicesDiv = document.getElementById('choices');
+const possibleChoices = choicesDiv.querySelectorAll('button');
 let userChoice
 let computerChoice
 
@@ -10,6 +13,9 @@ possibleChoices.forEach(possibleChoice => possibleChoice.addEventListener('click
     userChoiceDisplay.innerHTML = userChoice 
     generateComputerChoice()
     getResult()
+    // Hide choices and show play again
+    choicesDiv.style.display = 'none';
+    playAgainBtn.style.display = 'block';
 }))
 
 function generateComputerChoice() {
@@ -48,3 +54,14 @@ function getResult() {
     }
     resultDisplay.innerHTML = result
 }
+
+// Play Again button logic
+playAgainBtn.addEventListener('click', () => {
+    // Reset displays
+    computerChoiceDisplay.innerHTML = '';
+    userChoiceDisplay.innerHTML = '';
+    resultDisplay.innerHTML = '';
+    // Show choices, hide play again
+    choicesDiv.style.display = 'block';
+    playAgainBtn.style.display = 'none';
+});
