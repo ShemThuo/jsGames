@@ -3,8 +3,16 @@ body {
     justify-content: center;
 }
 .grid {
+    position: absolute;
     width: 600px;
     height: 300px;
     border: solid black 1px;
     border-radius: 4px;
+}
+.block {
+    position: absolute;
+    width: 100px;
+    height: 20px;
+    background-color: crimson;
+    
 }
